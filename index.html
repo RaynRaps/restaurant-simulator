@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Manager Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Restaurant Manager Simulator</h1>
+            <p>Build, manage, and achieve 200% ROI to win!</p>
+        </header>
+        <main>
+            <section id="setup">
+                <h2>Set Up Your Restaurant</h2>
+                <form id="setup-form">
+                    <label for="region">Choose Your Region:</label>
+                    <select id="region">
+                        <option value="northeast">Northeast</option>
+                        <option value="south">South</option>
+                        <option value="midwest">Midwest</option>
+                        <option value="west">West</option>
+                        <option value="southwest">Southwest</option>
+                    </select>
+
+                    <label for="niche">Choose Your Niche:</label>
+                    <select id="niche">
+                        <option value="casual">Casual Dining</option>
+                        <option value="fastfood">Fast Food</option>
+                        <option value="fine">Fine Dining</option>
+                        <option value="foodtruck">Food Truck</option>
+                    </select>
+
+                    <button type="button" id="start-game">Start Game</button>
+                </form>
+            </section>
+
+            <section id="gameplay" style="display: none;">
+                <h2>Day <span id="day-number">1</span></h2>
+                <div id="stats">
+                    <p>Region: <span id="region-display"></span></p>
+                    <p>Niche: <span id="niche-display"></span></p>
+                    <p>Customers Today: <span id="customers-display">0</span></p>
+                    <p>Revenue: $<span id="revenue-display">0</span></p>
+                    <p>Expenses: $<span id="expenses-display">0</span></p>
+                    <p>Net Profit: $<span id="profit-display">0</span></p>
+                    <p>ROI: <span id="roi-display">0</span>%</p>
+                </div>
+                <button id="next-day">Next Day</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
